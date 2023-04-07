@@ -1,0 +1,26 @@
+graph "Dijkstra's Link State Algorithm" {
+	graph [rankdir=LR]
+	node [shape=circle]
+	A
+	B
+	C
+	D
+	E
+	F
+	G
+	H
+	G -- F [label=2 color=Red dir=forward]
+	F -- H [label=3 color=Red dir=forward]
+	D -- E [label=1 color=Red dir=forward]
+	D -- B [label=2 color=Red dir=forward]
+	A -- C [label=2 color=Red dir=forward]
+	C -- D [label=2 color=Red dir=forward]
+	E -- G [label=1 color=Red dir=forward]
+	A -- B [label=8]
+	A -- D [label=5]
+	C -- E [label=5]
+	B -- F [label=13]
+	D -- F [label=6]
+	D -- G [label=3]
+	G -- H [label=6]
+}
